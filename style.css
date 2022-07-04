@@ -6,4 +6,40 @@
 }
 
 body {
+  background: url('./pattern.png');
+}
+/* TO center something Margin 0 AUTO */
+/* first part of margin controls y AXIS second controls x Axis */
+/* padding in main is what's pushing clock text away from parent div border */
+.main {
+  background: #ccc;
+  width: 400px;
+  height: 175px;
+  margin: 100px auto;
+  position: relative;
+  padding: 25px;
+}
+
+/* want to push outside of parent div */
+/* allows the position to start from the top left of the PARENT DIV not PAGE CORNER */
+.badge {
+  width: 96px;
+  background: #e66357;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  top: -15px;
+  left: 38%;
+}
+/* 100% height WITHIN the main div it wont spill out */
+.clock {
+  background: #ebebeb;
+  text-align: center;
+  font-size: 55px;
+  height: 100%;
+  padding-top: 20px;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 4px;
 }
