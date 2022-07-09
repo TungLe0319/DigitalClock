@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url('./pattern.png');
+  background: url("./pattern.png");
 }
 /* TO center something Margin 0 AUTO */
 /* first part of margin controls y AXIS second controls x Axis */
@@ -18,6 +18,8 @@ body {
   margin: 100px auto;
   position: relative;
   padding: 25px;
+  border: 4px solid #000000;
+  box-shadow: 0 0 10px #d01115;
 }
 
 /* want to push outside of parent div */
@@ -32,6 +34,8 @@ body {
   position: absolute;
   top: -15px;
   left: 38%;
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
 }
 /* 100% height WITHIN the main div it wont spill out */
 .clock {
@@ -40,6 +44,6 @@ body {
   font-size: 55px;
   height: 100%;
   padding-top: 20px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   border-radius: 4px;
 }

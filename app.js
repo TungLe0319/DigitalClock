@@ -3,19 +3,20 @@ function clock() {
   var hours = fullDate.getHours();
   var mins = fullDate.getMinutes();
   var seconds = fullDate.getSeconds();
+
   if (hours < 10) {
-    hours = '0' + hours;
+    hours = "0" + hours;
   }
   if (mins < 10) {
-    mins = '0' + mins;
+    mins = "0" + mins;
   }
   if (seconds < 10) {
-    seconds = '0' + seconds;
+    seconds = "0" + seconds;
   }
 
-  document.getElementById('hour').innerHTML = hours;
-  document.getElementById('minute').innerHTML = ':' + mins;
-  document.getElementById('seconds').innerHTML = ':' + seconds;
+  document.getElementById("hour").innerHTML = hours;
+  document.getElementById("minute").innerHTML = ":" + mins;
+  document.getElementById("seconds").innerHTML = ":" + seconds;
 }
 
 setInterval(clock, 100);
